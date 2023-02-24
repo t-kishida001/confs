@@ -1,3 +1,3 @@
 #!/bin/bash
 CONFDIR=`pwd`
-ls -s $CONFDIR/.vimrc ~/.vimrc
+ln -s $CONFDIR/.vimrc ~/.vimrc
