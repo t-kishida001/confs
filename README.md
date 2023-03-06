@@ -1,1 +1,2 @@
-# confs
+# configs
+iroiro config. kojin you.
