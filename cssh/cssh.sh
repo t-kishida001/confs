@@ -7,8 +7,6 @@
 FILENAME=$(date +%Y%m%d%H%M).log
 LOGFILEPATH=~/logs/$FILENAME
 
-#TARGETHOST=$1
-
 while getopts stnh: OPT
 do
     case $OPT in
