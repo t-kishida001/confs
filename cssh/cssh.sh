@@ -21,6 +21,7 @@ do
     esac
 done
 
+mkdir -m 775 -p ~/logs
 touch $LOGFILEPATH
 
 if [ "$PROTOCOL" = "telnet" ]; then
