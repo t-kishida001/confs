@@ -4,9 +4,6 @@
 # -s ssh
 # -n nologging
 # -h connect hostname or ip address 
-FILENAME=$(date +%Y%m%d%H%M).log
-LOGFILEPATH=~/logs/$FILENAME
-
 while getopts stnh: OPT
 do
     case $OPT in
@@ -22,6 +19,8 @@ do
 done
 
 mkdir -m 775 -p ~/logs
+FILENAME=$(date +%Y%m%d%H%M)_$TARGETHOST.log
+LOGFILEPATH=~/logs/$FILENAME
 touch $LOGFILEPATH
 
 if [ "$PROTOCOL" = "telnet" ]; then
